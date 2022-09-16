@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="css/usuario.css" />
+    <script type="text/javascript" src="./js/usuario.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body page='lista'>
+
+    <header>
+        <div id="title">
+            <a class="logo" href="./index.html">INVENTÁRIO <BR>IPAAM</a>
+        </div>
+        <ul>
+            <a class="sumir" href="#">
+                <li>inicio</li>
+            </a>
+            <a class="sumir" href="#">
+                <li>Sobre</li>
+            </a>
+            <a class="sumir" href="#">
+                <li>Projetos</li>
+            </a>
+            <a class="sumir" href="#">
+                <li>Contatos</li>
+            </a>
+            <a class="centro" href="./login.html" id="logar">
+                <li>SAIR</li>
+            </a>
+        </ul>
+    </header>
+
+    <div id="listaregistro">
+        <div>
+            <input placeholder="PESQUISAR" autofocus id='inputPesquisa' />
+        </div>
+        
+        <table>
+            <h1 class="h1inv">CONSULTA  DE INVENTÁRIO</h1>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>USUÁRIO</th>
+                    <th>SETOR</th>
+                    <th>COMPUTADOR</th>
+                    <th>MONITOR 1</th>
+                    <th>MONITOR 2</th>
+                    <th>NOBREAK</th>
+                </tr>
+            </thead>
+            <tbody id="listaRegistroBody"></tbody>
+        </table>
+    </div>
+
+    <form id='cadastroregistro'>
+
+        <div class='label'>
+            <div>ID</div>
+            <div>
+                <input type="number" readonly id="id">
+            </div>
+        </div>
+
+        <div class="label">
+            <div>NOME</div>
+            <div>
+                <input id="nome">
+            </div>
+        </div>
+
+        <div class="label">
+            <div>USUÁRIO</div>
+            <div>
+                <input id="usuario">
+            </div>
+        </div>
+
+        <div class="label">
+            <div>SETOR</div>
+            <div>
+                <input id="setor">
+            </div>
+        </div>
+
+        <div class="label">
+            <div>COMPUTADOR</div>
+            <div>
+                <input type="number" id="computador">
+            </div>
+        </div>
+
+        <div class="label">
+            <div>MONITOR 1</div>
+            <div>
+                <input type="number" id="monitor1">
+            </div>
+        </div>
+
+
+        <div class="label">
+            <div>MONITOR 2</div>
+            <div>
+                <input type="number" id="monitor2">
+            </div>
+        </div>
+
+        <div class="label">
+            <div>NOBREAK</div>
+            <div>
+                <input type="number" id="nobreak">
+            </div>
+        </div>
+
+        <div>
+            <button>Salvar</button>
+            <button onclick="visualizar('lista')" class="branco" type='button'>Cancelar</button>
+        </div>
+    </form>
+</body>
+
+</html>

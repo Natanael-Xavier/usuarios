@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('../fonts/poppins-black-webfont.woff2') format('woff2'),
+        url('../fonts/poppins-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+        url('../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+        url('../fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+        url('../fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+        url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background: #212121;
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #047439;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: #C5C3C3;
+}
+
+a:hover {
+    color: #37808d;
+    transition: 0.3s all;
+}
+
+#logar {
+    border: 2px solid #37808d;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#logar:hover {
+    color: #C5C3C3;
+    background: #37808d;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+#listaregistro {
+    display: none;
+}
+
+#cadastroregistro {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
+
+body[page=lista] #listaregistro {
+    display: block;
+}
+
+body[page=cadastro] #cadastroregistro {
+    display: flex;
+}
+
+body {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background: #2E2E2E;
+}
+
+#inputPesquisa {
+    display: flex;
+    float: right;
+    width: 25%;
+    flex: 1;
+    outline: none;
+    margin-top: 10px;
+}
+
+.h1inv{
+    display: flex;
+    font-family: poppinsbold;
+    margin-top: 100px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+table th,
+table td {
+    font-size: 14px;
+    padding: 10px 10px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    color: white;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #047439;
+    color: white;
+    margin: 3px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+button.branco {
+    background-color: white;
+    color: #666;
+}
+
+button.vermelho {
+    background-color: #a00;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input {
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.label>div {
+    display: flex;
+    width: 10%;
+    color: white;
+}
+
+.label>div>input {
+    flex: 1;
+}
